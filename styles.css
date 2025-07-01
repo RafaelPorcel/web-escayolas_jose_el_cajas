@@ -122,7 +122,27 @@ footer {
 
 .footer-content a {
     color: #fff;
-    text-decoration: underline;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-content a:hover {
+    color: #222;
+    text-decoration: none;
+}
+
+.footer-content strong {
+    font-size: 1.1em;
+}
+
+.footer-content strong.contacto::after {
+    content: "";
+}
+
+.footer-content strong:not(.contacto)::after {
+    content: "";
 }
 
 .footer-content .marcas {
@@ -513,4 +533,85 @@ footer {
         margin-right: 0;
         border-radius: 0;
     }
+}
+
+/* Contacto - Recuadros bonitos */
+.contact-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.contact-card {
+    background: #f8f9fa;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(141,196,45,0.08);
+    padding: 1.5rem 2rem;
+    min-width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 2px solid #e0e0e0;
+}
+.contact-card:hover {
+    transform: translateY(-6px) scale(1.04);
+    box-shadow: 0 6px 24px rgba(141,196,45,0.18);
+    border-color: var(--verde-logo);
+}
+.contact-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.7rem;
+}
+.contact-card a,
+.footer-content a {
+    color: var(--verde-logo);
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.contact-card a:hover,
+.footer-content a:hover {
+    color: #222;
+    text-decoration: none;
+}
+
+/* Hacer más grandes los dos puntos en los textos estáticos */
+.contact-card span.contact-icon + a::before,
+.footer-content strong::after {
+    content: "";
+}
+
+/* Ajuste para que no se dupliquen los dos puntos si ya existen */
+.contact-card a::before {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    .contact-cards {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .contact-card {
+        width: 90vw;
+        min-width: unset;
+        box-sizing: border-box;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.footer-content,
+.footer-content p,
+.footer-content strong,
+.footer-content a {
+    color: #fff !important;
+}
+.footer-content a:hover {
+    color: #222 !important;
 } 
