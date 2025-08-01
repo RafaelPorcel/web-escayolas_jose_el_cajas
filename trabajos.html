@@ -10,6 +10,7 @@
 <body>
     <script src="menu.js"></script>
     <script src="modal.js"></script>
+    <script src="carrusel.js"></script>
     
     <header>
         <nav class="navbar">
@@ -29,25 +30,56 @@
             <p>Galería y ejemplos de nuestros proyectos realizados.</p>
             <div class="galeria-trabajos">
                 <div class="trabajo-item">
-                    <img src="img/trabajos/trabajo1.jpeg" alt="Trabajo de escayola en techo">
-                    <p>Instalación de escayola decorativa en techo de salón.</p>
+                    <h3 class="trabajo-titulo">Trabajo 1 </h3>
+                    <div class="carousel" data-interval="2000">
+                        <div class="carousel-slide active">
+                            <img src="img/trabajos/trabajo1.jpeg" alt="Antes - Trabajo ejemplo" class="carousel-img" tabindex="0">
+                            <div class="carousel-numero">1 / 4</div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="img/trabajos/trabajo2.jpeg" alt="Después - Trabajo ejemplo" class="carousel-img" tabindex="0">
+                            <div class="carousel-numero">2 / 4</div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="img/trabajos/trabajo3.jpeg" alt="Antes - Trabajo ejemplo 2" class="carousel-img" tabindex="0">
+                            <div class="carousel-numero">3 / 4</div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="img/trabajos/trabajo4.jpeg" alt="Después - Trabajo ejemplo 2" class="carousel-img" tabindex="0">
+                            <div class="carousel-numero">4 / 4</div>
+                        </div>
+                        <button class="carousel-prev" aria-label="Anterior">&#10094;</button>
+                        <button class="carousel-next" aria-label="Siguiente">&#10095;</button>
+                    </div>
+                    <p class="trabajo-descripcion">Descripccion del trabajo o reforma</p>
                 </div>
+
+
                 <div class="trabajo-item">
-                    <img src="img/trabajos/trabajo2.jpeg" alt="Tabique de pladur">
-                    <p>Montaje de tabique de pladur para separación de ambientes.</p>
+                    <h3 class="trabajo-titulo">Trabajo 2 </h3>
+                    <div class="carousel" data-interval="4000">
+                        <div class="carousel-slide active">
+                            <img src="img/trabajos/trabajo1.jpeg" alt="Antes - Trabajo ejemplo" class="carousel-img" tabindex="0">
+                            <div class="carousel-numero">1 / 4</div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="img/trabajos/trabajo2.jpeg" alt="Después - Trabajo ejemplo" class="carousel-img" tabindex="0">
+                            <div class="carousel-numero">2 / 4</div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="img/trabajos/trabajo3.jpeg" alt="Antes - Trabajo ejemplo 2" class="carousel-img" tabindex="0">
+                            <div class="carousel-numero">3 / 4</div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="img/trabajos/trabajo4.jpeg" alt="Después - Trabajo ejemplo 2" class="carousel-img" tabindex="0">
+                            <div class="carousel-numero">4 / 4</div>
+                        </div>
+                        <button class="carousel-prev" aria-label="Anterior">&#10094;</button>
+                        <button class="carousel-next" aria-label="Siguiente">&#10095;</button>
+                    </div>
+                    <p class="trabajo-descripcion">Descripccion del trabajo o reforma</p>
                 </div>
-                <div class="trabajo-item">
-                    <img src="img/trabajos/trabajo3.jpeg" alt="Detalle de moldura">
-                    <p>Detalle de moldura de escayola en vivienda particular.</p>
-                </div>
-                <div class="trabajo-item">
-                    <img src="img/trabajos/trabajo4.jpeg" alt="Falso techo de pladur">
-                    <p>Falso techo de pladur con iluminación empotrada.</p>
-                </div>
-                <div class="trabajo-item">
-                    <img src="img/trabajos/trabajo5.jpeg" alt="Reforma integral">
-                    <p>Reforma integral con acabados en escayola y pladur.</p>
-                </div>
+
             </div>
         </section>
     </main>
@@ -67,7 +99,9 @@
     </footer>
     <div id="imageModal" class="modal">
         <span class="close">&times;</span>
-        <img class="modal-content" id="modalImage">
+        <div class="modal-carousel">
+            <!-- Aquí se cargará el carrusel en grande -->
+        </div>
     </div>
 </body>
 </html> 
