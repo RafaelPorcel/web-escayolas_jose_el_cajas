@@ -38,35 +38,50 @@
             <div class="contact-info">
                 <h2>Datos de contacto</h2>
                 <div class="contact-cards">
-                    <div class="contact-card whatsapp">
+                    
+
+                    <a href="https://wa.me/34678152309" target="_blank" rel="noopener" class="contact-card whatsapp">
                         <span class="contact-icon">💬</span>
-                        <a href="https://wa.me/34678152309" target="_blank" rel="noopener">Escribir por WhatsApp</a>
-                    </div>
-                    <div class="contact-card email">
-                        <span class="contact-icon">✉️</span>
-                        <a href="mailto:escayolaselcajas@hotmail.com">escayolaselcajas@hotmail.com</a>
-                    </div>
-                    <div class="contact-card phone">
+                        <span>Escribir por WhatsApp</span>
+                    </a>
+
+                    <a href="tel:678152309" target="_blank" rel="noopener" class="contact-card phone">
                         <span class="contact-icon">📞</span>
-                        <a href="tel:678152309">678152309</a>
-                    </div>
+                        <span>678152309</span>
+                    </a>
+                    
+                    <a href="mailto:escayolaselcajas@hotmail.com" target="_blank" rel="noopener" class="contact-card email">
+                        <span class="contact-icon">✉️</span>
+                        <span>escayolaselcajas@hotmail.com</span>
+                    </a>
+
+                    
                 </div>
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="main-footer">
         <div class="footer-content">
-            <p>
-                <strong class="contacto">Contacto:</strong>
-                <a href="mailto:escayolaselcajas@hotmail.com">escayolaselcajas@hotmail.com</a> |
-                <a href="tel:678152309">678152309</a> |
-                <a href="https://wa.me/34678152309" target="_blank" rel="noopener">WhatsApp</a>
-            </p>
-            <p><strong>Dirección:</strong> almacén en polígono industrial Palomares, parcela 138</p>
-            <div class="marcas">
-                <!-- Aquí irán las marcas -->
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>
+                    <a href="mailto:escayolaselcajas@hotmail.com">escayolaselcajas@hotmail.com</a><br>
+                    <a href="tel:678152309">678 15 23 09</a><br>
+                    <a href="https://wa.me/34678152309" target="_blank" rel="noopener">WhatsApp</a>
+                </p>
+            </div>
+            <div class="footer-section">
+                <h3>Dirección</h3>
+                <p>Almacén en Polígono Industrial Palomares, parcela 138<br>Añora (Córdoba)</p>
             </div>
         </div>
+        <div class="footer-bottom">
+            © <span id="year"></span> escayolasjoseelcajas.com. Todos los derechos reservados.
+        </div>
+        <script>
+            // Mostrar el año actual
+            document.getElementById('year').textContent = new Date().getFullYear();
+        </script>
     </footer>
 </body>
 </html> 

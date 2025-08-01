@@ -24,13 +24,23 @@
     </header>
     <main>
         <section class="hero">
-            <div class="hero-content">
-                <h1>Escayolas Jose El Cajas: Referentes en escayola y pladur en el Valle de los Pedroches</h1>
+            <div class="about-text">
+                <h1>Escayolas Jose 'El Cajas': Referentes en escayola, Pladur® y Knauf® en el Valle de los Pedroches</h1>
                 <p class="hero-description">
-                    En <strong>Escayolas Jose El Cajas</strong> somos la empresa líder en <strong>venta y colocación de tabiquería y techos en escayola y pladur</strong> en <strong>Pozoblanco</strong> y todo el <strong>Valle de los Pedroches</strong>. Más de 20 años de experiencia nos avalan ofreciendo <strong>aislamientos térmicos y acústicos</strong>, soluciones decorativas y acabados profesionales tanto para particulares como para empresas.
+                    En <strong>Escayolas Jose El Cajas</strong> somos la empresa líder en <strong> colocación de 
+                        falsos techos, tabiquería y techos de placa de yeso laminado (PYL).
+                    </p>
+                    <p p class="hero-description">
+                        Trabajamos con primeras marcas como Pladur® 
+                        o Knauf®</strong> en <strong>Pozoblanco</strong> y todo el 
+                        <strong>Valle de los Pedroches</strong>. Más de 20 años de experiencia nos avalan ofreciendo 
+                        <strong>aislamientos térmicos y acústicos</strong>, soluciones decorativas y acabados profesionales 
+                        tanto para particulares como para empresas.
                 </p>
                 <p class="hero-description">
-                    Si buscas especialistas en <strong>escayolas, pladur, techos, tabiques y aislamientos en Pozoblanco</strong> o en la comarca de Los Pedroches, confía en una empresa referente, profesional y cercana.
+                    Si buscas especialistas en <strong>escayolas, placas de yeso laminado (PYL), Pladur®, Knauf®, techos, tabiques y 
+                    aislamientos en Pozoblanco</strong> o en la comarca de <strong>Los Pedroches</strong>, 
+                    confía en una empresa referente, profesional y cercana.
                 </p>
                 <div class="hero-buttons">
                     <a href="trabajos.html" class="btn-primary">Ver nuestros trabajos</a>
@@ -43,22 +53,22 @@
             <h2>Nuestros Servicios</h2>
             <div class="servicios-grid">
                 <div class="servicio-card">
-                    <div class="servicio-icon">🏗️</div>
+                    <div class="servicio-icon"><img src="img/icono/tabiqueria_techos.jpg" alt="Tabiquería y Techos"></div>
                     <h3>Tabiquería y Techos</h3>
-                    <p>Venta y colocación de tabiques y techos en escayola y pladur</p>
+                    <p>Venta y colocación de tabiques y techos en escayola y Pladur®</p>
                 </div>
                 <div class="servicio-card">
-                    <div class="servicio-icon">🔇</div>
+                    <div class="servicio-icon"><img src="img/icono/aislamientos_acusticos.jpg" alt="Aislamientos"></div>
                     <h3>Aislamientos</h3>
                     <p>Aislamientos térmicos y acústicos para mayor confort</p>
                 </div>
                 <div class="servicio-card">
-                    <div class="servicio-icon">🎨</div>
+                    <div class="servicio-icon"><img src="img/icono/revestimientos.jpg" alt="Revestimientos"></div>
                     <h3>Revestimientos</h3>
                     <p>Acabados decorativos y funcionales para paredes</p>
                 </div>
                 <div class="servicio-card">
-                    <div class="servicio-icon">✨</div>
+                    <div class="servicio-icon"><img src="img/icono/soluciones_decorativas.jpg" alt="Soluciones Decorativas"></div>
                     <h3>Soluciones Decorativas</h3>
                     <p>Diseño personalizado y aislamiento térmico</p>
                 </div>
@@ -74,7 +84,7 @@
                 </div>
                 <div class="ventaja">
                     <h3>Primeras Marcas</h3>
-                    <p>Trabajamos con Pladur y las mejores marcas del mercado</p>
+                    <p>Trabajamos con Pladur®, Knauf® y las mejores marcas del mercado</p>
                 </div>
                 <div class="ventaja">
                     <h3>Servicio Personalizado</h3>
@@ -95,19 +105,29 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="main-footer">
         <div class="footer-content">
-            <p>
-                <strong class="contacto">Contacto:</strong>
-                <a href="mailto:escayolaselcajas@hotmail.com">escayolaselcajas@hotmail.com</a> |
-                <a href="tel:678152309">678152309</a> |
-                <a href="https://wa.me/34678152309" target="_blank" rel="noopener">WhatsApp</a>
-            </p>
-            <p><strong>Dirección:</strong> almacén en polígono industrial Palomares, parcela 138</p>
-            <div class="marcas">
-                <!-- Aquí irán las marcas -->
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>
+                    <a href="mailto:escayolaselcajas@hotmail.com">escayolaselcajas@hotmail.com</a><br>
+                    <a href="tel:678152309">678 15 23 09</a><br>
+                    <a href="https://wa.me/34678152309" target="_blank" rel="noopener">WhatsApp</a>
+                </p>
+            </div>
+            <div class="footer-section">
+                <h3>Dirección</h3>
+                <p>Almacén en Polígono Industrial Palomares, parcela 138<br>Añora (Córdoba)</p>
             </div>
         </div>
+        <div class="footer-bottom">
+            © <span id="year"></span> escayolasjoseelcajas.com. Todos los derechos reservados.
+        </div>
+        <script>
+            // Mostrar el año actual
+            document.getElementById('year').textContent = new Date().getFullYear();
+        </script>
     </footer>
+    
 </body>
 </html> 

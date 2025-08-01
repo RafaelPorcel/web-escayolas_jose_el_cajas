@@ -120,6 +120,20 @@ footer {
     margin-top: 2rem;
 }
 
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.footer-section {
+    flex: 1 1 300px;
+}
+
 .footer-content a {
     color: #fff;
     font-size: 1.1rem;
@@ -148,6 +162,15 @@ footer {
 .footer-content .marcas {
     margin-top: 1rem;
     font-size: 1.1rem;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.2);
+    margin-top: 2rem;
+    padding-top: 1rem;
+    font-size: 0.9rem;
+    color: #eee;
+    text-align: center;
 }
 
 /* Formulario de contacto */
@@ -432,6 +455,10 @@ footer {
     margin-bottom: 1rem;
 }
 
+.servicio-icon img {
+    width: 30%
+}
+
 .servicio-card h3 {
     color: var(--verde-logo);
     margin-bottom: 1rem;
@@ -533,6 +560,10 @@ footer {
         margin-right: 0;
         border-radius: 0;
     }
+
+    .servicio-icon img {
+        width: 20%
+    }
 }
 
 /* Contacto - Recuadros bonitos */
@@ -564,19 +595,22 @@ footer {
     font-size: 2.5rem;
     margin-bottom: 0.7rem;
 }
-.contact-card a,
-.footer-content a {
+
+.contact-card {
     color: var(--verde-logo);
     font-size: 1.1rem;
     font-weight: 600;
     text-decoration: none;
     transition: color 0.2s;
 }
-.contact-card a:hover,
-.footer-content a:hover {
+.contact-card:hover {
     color: #222;
     text-decoration: none;
 }
+
+
+
+
 
 /* Hacer más grandes los dos puntos en los textos estáticos */
 .contact-card span.contact-icon + a::before,
