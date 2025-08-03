@@ -77,6 +77,19 @@ header {
     .nav-social {
         display: none;
     }
+    .nav-links.open {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background: #fff;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1001;
+        gap: 1rem;
+        padding: 1rem 0;
+    }
     .menu-toggle {
         display: block;
         margin-left: auto;
